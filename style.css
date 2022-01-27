@@ -1,0 +1,67 @@
+body {
+    background-color: beige;
+    text-align: center;
+    margin: 5% 22% 10%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.createOrder {
+    border: 2px solid;
+    width: 800px;
+    text-align: center;
+    margin: 2% auto;
+}
+
+.form {
+    border: 2px solid;
+    width: 800px;
+    text-align: center;
+    margin: 2% auto;
+    font-weight: bold;
+}
+
+#order {
+    border: 2px solid;
+    width: 800px;
+    text-align: left;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#crust {
+    display: inline;
+    margin: 1%;
+}
+
+#sauce {
+    display: inline;
+    margin: 1%;
+}
+
+button {
+   margin: 10px;
+   border-radius: 5px; 
+}
+
+#btn:hover {
+    border: solid rgba(44, 127, 160, 0.849);
+    border-radius: 8px;
+}
+
+#topping1 {
+    margin: 1%;
+}
+
+#topping2 {
+    margin: 1%;
+}
+
+#topping3 {
+    margin: 1%;
+}
