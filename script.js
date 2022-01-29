@@ -28,41 +28,49 @@ formButton.addEventListener("click", function getName(event) {
 })
 
 
-function calculateTotal(toppingArray) {  
-    let total = 0; 
-    let toppingCost = 2.50; 
+function calculateTotal(toppingArray) {
+    let total = 0;
+    let toppingCost = 2.50;
     let baseCost = 5.50; // cost of crust and sauce
 
     // order string concatenation
 
-    let orderString = crust + " pizza with " + sauce;
-    
+    let orderString = crust.value + " pizza with " + sauce.value;
+
     let toppingString = "Toppings: ";
-    
+
 
     // For Loop
 
-    for (var i = 0; i < toppings.length; i++) {
-        total = total + toppingCost;
-        toppingString = toppingString + toppings[i] + " ";
-        
-        
+    for (var i = 0; i < toppingArray.length; i++) {
+
+        // 
+        if (toppingArray[i] !== "") {
+
+            total = total + toppingCost;
+            toppingString = toppingString + toppingArray[i] + " ";
+
         }
+
+
+
+
+    }
 
     // total = baseCost + cost of all toppings
 
     total = total + baseCost;
 
     // set DOM total += total
-    
+
     document.getElementById("total$").innerHTML = "$" + total;
-    
+
     // use DOM: = orderString
-    
+
     document.getElementById("pizzaOrder").innerHTML = orderString;
-    
+
     // use DOM: = toppingString
-    
+
     document.getElementById("toppings").innerHTML = toppingString;
 }
 

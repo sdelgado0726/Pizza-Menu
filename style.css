@@ -65,3 +65,8 @@ button {
 #topping3 {
     margin: 1%;
 }
+
+
+#order > div {
+    margin-bottom: 20px;
+}
