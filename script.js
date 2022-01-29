@@ -35,7 +35,7 @@ function calculateTotal(toppingArray) {
 
     // order string concatenation
 
-    let orderString = crust.value + " pizza with " + sauce.value;
+    let orderString = crust.value + " Pizza with " + sauce.value;
 
     let toppingString = "Toppings: ";
 
@@ -44,16 +44,12 @@ function calculateTotal(toppingArray) {
 
     for (var i = 0; i < toppingArray.length; i++) {
 
-        // 
         if (toppingArray[i] !== "") {
 
             total = total + toppingCost;
             toppingString = toppingString + toppingArray[i] + " ";
 
         }
-
-
-
 
     }
 
